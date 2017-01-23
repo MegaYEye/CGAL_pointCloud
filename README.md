@@ -7,6 +7,15 @@ Code developed by Sharan Sankar ([@sharansankar](https://github.com/sharansankar
 
 ## Prerequisites
 
+* CGAL, http://doc.cgal.org/latest/Manual/installation.html
+
+```
+sudo apt-get install libcgal-dev libcgal-demo
+sudo apt-get libqglviewer-dev libmpfi-dev libipe-dev
+```
+
+You might need Eigen3 (http://eigen.tuxfamily.org/), and OpenMesh (http://www.openmesh.org/). This need to be checked still
+
 
 ## Install
 
