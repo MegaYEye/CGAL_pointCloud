@@ -46,6 +46,7 @@ http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processin
 
 More time-consuming to compute
 _argv[1]=  % of point clouds to keep [now we remove 90%, *keep 10%*]_
+
 _argv[2]= the number of neighbouring points that are taken into consideration [def 24]_
 
 ```
@@ -56,7 +57,9 @@ _argv[2]= the number of neighbouring points that are taken into consideration [d
 http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processing_3Smoothing
 
 _argv[1]= the control sharpness of the result [def 20]_
+
 _argv[2]= the number of times the projection is applied  [def 2]_
+
 _argv[3]= neighboorhood size [def 75]_
 
 ```
@@ -70,8 +73,11 @@ http://vcc.szu.edu.cn/research/2013/EAR/
 http://doc.cgal.org/latest/Point_set_processing_3/
 
 _argv[1]= control sharpness of the result, e.g. 25_
+
 _argv[2]= higher values will sample more points near the edges, e.g. 0 for uniform sampling, 0.5 for edge-weighed_
+
 _argv[3]= initial size of neighborhood, e.g. 0.25_
+
 _argv[4]= upsampling factor, e.g. with 1, the number of points same constant_
 
 ```
