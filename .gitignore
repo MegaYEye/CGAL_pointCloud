@@ -1,0 +1,5 @@
+/CGAL/EAR/build/*
+/CGAL/WLOP/build/*
+/CGAL/bilateralSmoothing/build/*
+/CGAL/normalEstimation/build/*
+/CGAL/removeOutliers/*
