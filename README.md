@@ -34,6 +34,7 @@ The provided algorithms are not the most adaptive that there are as they require
 http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processing_3OutlierRemoval
 
 This is rather fast to compute:
+
 _argv[1]= % of point clouds to remove [now we remove 10%]_
 _argv[2]= the number of neighbouring points that are taken into consideration [def 24]_
 
@@ -44,10 +45,11 @@ _argv[2]= the number of neighbouring points that are taken into consideration [d
 #### 3.2a Simplify the point cloud with WLOP
 http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processing_3Simplification
 
-More time-consuming to compute
-   _argv[1]=  % of point clouds to keep [now we remove 90%, *keep 10%*]_
+More time-consuming to compute, but this can be accelerated with *multiple cores* with [Intel TBB](http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processing_3Example_wlop) (in other words buying a lot of cloud computing power)
 
-   _argv[2]= the number of neighbouring points that are taken into consideration [def 24]_
+_argv[1]=  % of point clouds to keep [now we remove 90%, *keep 10%*]_
+
+_argv[2]= the number of neighbouring points that are taken into consideration [def 24]_
 
 ```
 ./WLOP/build/WLOP 10 0.5 ../outputPath/cloud_outlierRemoved.xyz ../outputPath/cloud_WLOPed.xyz
@@ -72,6 +74,8 @@ _argv[3]= neighboorhood size [def 75]_
 http://vcc.szu.edu.cn/research/2013/EAR/
 http://doc.cgal.org/latest/Point_set_processing_3/
 
+Rather time-consuming to compute again:
+
 _argv[1]= control sharpness of the result, e.g. 25_
 
 _argv[2]= higher values will sample more points near the edges, e.g. 0 for uniform sampling, 0.5 for edge-weighed_
@@ -90,8 +94,8 @@ http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processin
 _argv[1]= K-nearest neighbors = 3 rings [def 18]_
 
 ```
-./normalEstimation/build/normalEstimation 18 ../outputPath/cloud_WLOPed.xyz ../outputPath/cloud_normalEstimated.xyz
-./normalEstimation/build/normalEstimation 18 ../outputPath/cloud_EARd.xyz ../outputPath/cloud_normalEstimated.xyz
+./normalEstimation/build/normalEstimation 18 ../outputPath/cloud_WLOPed.xyz ../outputPath/cloud_WLOP_normalEstimated.xyz
+./normalEstimation/build/normalEstimation 18 ../outputPath/cloud_EARd.xyz ../outputPath/cloud_EAR_normalEstimated.xyz
 ```
 
 #### NOTES!
