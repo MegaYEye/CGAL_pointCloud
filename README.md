@@ -45,9 +45,9 @@ _argv[2]= the number of neighbouring points that are taken into consideration [d
 http://doc.cgal.org/latest/Point_set_processing_3/index.html#Point_set_processing_3Simplification
 
 More time-consuming to compute
-_argv[1]=  % of point clouds to keep [now we remove 90%, *keep 10%*]_
+   _argv[1]=  % of point clouds to keep [now we remove 90%, *keep 10%*]_
 
-_argv[2]= the number of neighbouring points that are taken into consideration [def 24]_
+   _argv[2]= the number of neighbouring points that are taken into consideration [def 24]_
 
 ```
 ./WLOP/build/WLOP 10 0.5 ../outputPath/cloud_outlierRemoved.xyz ../outputPath/cloud_WLOPed.xyz
