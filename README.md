@@ -83,7 +83,7 @@ _argv[3]= neighboorhood size [def 75]_
 http://vcc.szu.edu.cn/research/2013/EAR/
 http://doc.cgal.org/latest/Point_set_processing_3/
 
-*Very time-consuming* to compute:
+*Very time-consuming* to compute, and *not feasible* for the example point cloud
 
 _argv[1]= control sharpness of the result, e.g. 25_
 
